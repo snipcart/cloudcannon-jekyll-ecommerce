@@ -1,21 +1,17 @@
-## Fur
+## Multilingual E-commerce Jekyll template
 
 E-commerce template for Jekyll. Browse through a [live demo](https://turquoise-rook.cloudvent.net).
 
-![Fur template screenshot](images/_screenshot.png)
+This template is based on [Fur](https://github.com/CloudCannon/fur-jekyll-template) by [CloudCannon](http://cloudcannon.com/) and we added multilingual features and customizable categories.
 
-Fur was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-
-Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+You can learn more about building stuff on CloudCannon at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
 ## Features
 
-* List product with multiple colours and sizes
+* Edit your content in multiple language
+* List product by categories
 * Take payment online using SnipCart
-* Contact form
 * Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
 * Google Analytics
 
 ## Setup
@@ -26,7 +22,7 @@ Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https:
 
 ## Develop
 
-Fur was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
+This demo was built with [Jekyll](http://jekyllrb.com/) version 3.5.2, but should support newer versions as well.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
@@ -58,3 +54,9 @@ Fur is already optimised for adding, updating and removing products and editing 
 
 * Exposed as a data file to give clients better access.
 * Set in the *Data* / *Footer* section.
+
+## License
+
+The code and templates are MIT licensed.
+
+The icons are from [The Noun Project](https://thenounproject.com/).
