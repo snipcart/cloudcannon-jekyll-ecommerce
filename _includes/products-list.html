@@ -1,11 +1,9 @@
 
-{% assign category = include.category | split:'/' | last %}
-
 {% assign products = site.products | where:'lang', page.lang %}
 {% for product in products %}
 {% assign productCategory = product.category | split:'/' | last %}
 
-{% if productCategory == category %}
+{% if productCategory == include.category %}
 <article>
 	<h{{include.lvl}} class="product-title">{{product.title}}</h{{include.lvl}}>
 	<p>{{product.description}}</p>

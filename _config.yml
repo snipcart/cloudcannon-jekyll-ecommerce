@@ -39,6 +39,7 @@ t:
 
 collections:
   products:
+    _hide_content: true
     output: true
   categories:
     output: true
@@ -68,14 +69,12 @@ defaults:
     values:
       permalink: "/fr/produits/:title"
       lang: "fr"
-      layout: "products"
   -
     scope:
       path: "_products/en"
     values:
       permalink: "/en/products/:title"
       lang: "en"
-      layout: "products"
   -
     scope:
       path: "_pages/fr"

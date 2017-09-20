@@ -10,7 +10,8 @@ layout: default
 	</section>
 	<section class="page">
 		<div class="container">
-			{% include products-list.html category=page.category lvl=2 %}
+			{% assign categoryName = page.path | split:'/' | last | split:'.' | first %}
+			{% include products-list.html category=categoryName lvl=2 %}
 		</div>
 	</section>
 </div>
