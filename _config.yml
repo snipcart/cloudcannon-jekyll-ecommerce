@@ -21,14 +21,28 @@ social:
     - https://github.com/snipcart/demo-cloudcannon
 
 
+langs:
+  - "en"
+  - "fr"
+
+# -----
+# Translations
+t:
+  default_lang: "en"
+  en:
+    title: Roger's Potato Shack
+  fr:
+    title: La Cantine à Roger
+
 # -----
 # Build
 
 collections:
-  staff_members:
-    _hide_content: true
   products:
-    _hide_content: true
+    output: true
+  categories:
+    output: true
+  pages:
     output: true
 
 permalink: pretty
@@ -36,20 +50,46 @@ permalink: pretty
 defaults:
   -
     scope:
-      path: ""
-      type: "products"
+      path: "_categories/fr"
     values:
-      layout: "product"
+      permalink: "/fr/categories/:title"
+      lang: "fr"
+      layout: "categories"
   -
     scope:
-      path: ""
+      path: "_categories/en"
     values:
+      permalink: "/en/categories/:title"
+      lang: "en"
+      layout: "categories"
+  -
+    scope:
+      path: "_products/fr"
+    values:
+      permalink: "/fr/produits/:title"
+      lang: "fr"
+      layout: "products"
+  -
+    scope:
+      path: "_products/en"
+    values:
+      permalink: "/en/products/:title"
+      lang: "en"
+      layout: "products"
+  -
+    scope:
+      path: "_pages/fr"
+    values:
+      permalink: "/fr/:title"
+      lang: "fr"
       layout: "page"
   -
     scope:
-      path: "index.html"
+      path: "_pages/en"
     values:
-      layout: "default"
+      permalink: "/en/:title"
+      lang: "en"
+      layout: "page"
 
 jekyll-archives:
   enabled:

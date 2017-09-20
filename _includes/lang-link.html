@@ -1,0 +1,16 @@
+
+<li>
+	{% if page.layout == 'home' %}
+		{% if lang == site.t.default_lang %}
+			{% capture langUrl %}{{site.baseurl}}/{% endcapture %}
+		{% else %}
+			{% capture langUrl %}{{site.baseurl}}/{{lang}}/{% endcapture %}
+		{% endif %}
+	{% else %}
+		{% assign pageName = page.path | split:'/' | last %}
+		{% capture otherPath %}_{{page.collection}}/{{lang}}/{{pageName}}{% endcapture %}
+		{% assign otherPage = site[page.collection] | where:'lang', lang | where:'path', otherPath | first %}
+		{% assign langUrl = otherPage.url %}
+	{% endif %}
+	<a href="{{langUrl}}">{{lang}}</a>
+</li>

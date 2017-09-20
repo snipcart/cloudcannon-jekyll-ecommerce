@@ -1,0 +1,7 @@
+{% assign products = site.products | where:'category', include.category | where:'lang', page.lang %}
+{% for product in products %}
+<article>
+	<h{{include.lvl}} class="product-title">{{product.title}}</h{{include.lvl}}>
+	<p>{{product.description}}</p>
+</article>
+{% endfor %}

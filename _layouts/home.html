@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="content">
+	<div class="page">
+{% assign categories = site.categories | where: "lang", page.lang %}
+{% for category in categories %}
+		<section class="category container {% if page.full_width %}max-container{% endif %}" style="background-color: {{category.color}};">
+			<h2><a href="{{ category.url }}">{{ category.title }}</a></h2>
+			{% include products-list.html category=category.category lvl=3 %}
+		</section>
+{% endfor %}
+	</div>
+</div>
