@@ -1,6 +1,7 @@
 ---
 title: Poutine
-category: fried-stuff
+category: en/fried-stuff
 ---
+
 
 Poutine yeah !
