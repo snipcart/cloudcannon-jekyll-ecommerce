@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Fur
+title: Roger's Potato Shack
 url: "http://turquoise-rook.cloudvent.net/"
 baseurl:
 google_analytics_key:
@@ -10,15 +10,16 @@ snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5O
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Fur t-shirt store
+description: Roger's Potato Shack
 author:
-  name: fur
-  email: fur@example.com
-  twitter: fur # twitter username without the @ symbol
+  name: Snipcart's Geeks
+  email: geeks@snipcart.com
+  twitter: snipcart # twitter username without the @ symbol
 social:
-  name: Fur Template
-  links:
-    - https://github.com/CloudCannon/fur-jekyll-template
+  name: Multilingual Snipcart Template
+  links: Multilingual Snipcart Template
+    - https://github.com/snipcart/demo-cloudcannon
+
 
 # -----
 # Build
@@ -66,10 +67,6 @@ exclude:
 
 # -----------
 # CloudCannon
-
-garment_types:
-  - hat
-  - top
 
 social_icons:
   - Email
