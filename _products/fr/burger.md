@@ -1,7 +1,7 @@
 ---
 name: burger
-price_number:
-id:
+price_number: 4.5
+id: burger
 product_image_path:
-category:
+category: en/fried-stuff
 ---
