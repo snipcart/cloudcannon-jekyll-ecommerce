@@ -2,4 +2,6 @@
 title: Froid et sucré
 color: '#6b6bff'
 ---
-De la crème glacée pour les fous pis les fins.
+
+
+Para&icirc;trait que la cr&egrave;me glac&eacute;e r&egrave;gle bien des probl&egrave;mes!
