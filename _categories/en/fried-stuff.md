@@ -1,5 +1,5 @@
 ---
 title: Fried and Grassy Stuff
-color: '#ff4d4d'
+color: '#ffbbbb'
 ---
 Everything your belly need to feel happy

@@ -1,6 +1,6 @@
 .styles {
 	width: 100%;
-	background: #eee;
+	background: rgba(238, 238, 238, 0.3);
 	position: relative;
 	padding: 20px;
 	box-sizing: border-box;
@@ -77,7 +77,8 @@
 		margin: 20px;
 	}
 
-	h4 {
+	h2, h3, h4 {
+		color: $brand-color;
 		margin: 10px 0 0 0;
 		padding-right: 100px;
 	}

@@ -1,0 +1,20 @@
+<li>
+	{% assign data = include.main %}
+	{% assign product = include.current %}
+	<div class="styles">
+		{% if product.product_image_path != blank %}
+		<img src="{{product.product_image_path}}" alt="{{product.title}}" />
+		{% elsif data.product_image_path != blank %}
+		<img src="{{data.product_image_path}}" alt="{{product.title}}" />
+		{% endif %}
+	</div>
+	<div class="product-details">
+		<h{{include.lvl}} class="product-title">{{product.title}}</h{{include.lvl}}>
+		<p class="button">
+			<button>
+				{{site.t[page.lang].buyBtn}} {{data.price}}$
+			</button>
+		</p>
+		<p>{{product.description}}</p>
+	</div>
+</li>

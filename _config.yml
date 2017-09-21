@@ -31,8 +31,10 @@ t:
   default_lang: "en"
   en:
     title: Roger's Potato Shack
+    buyBtn: Buy it for
   fr:
     title: La Cantine à Roger
+    buyBtn: Acheter pour
 
 # -----
 # Build
