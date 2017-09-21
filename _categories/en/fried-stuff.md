@@ -4,4 +4,4 @@ color: '#ffbbbb'
 ---
 
 
-Everything your belly need to feel happy
+Happy tummy (for a short while)!
