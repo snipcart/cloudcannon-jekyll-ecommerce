@@ -1,14 +1,51 @@
 
-{% assign products = site.products | where:'lang', page.lang %}
-{% for product in products %}
-{% assign productCategory = product.category | split:'/' | last %}
 
-{% if productCategory == include.category %}
-<article>
-	<h{{include.lvl}} class="product-title">{{product.title}}</h{{include.lvl}}>
-	<p>{{product.description}}</p>
-</article>
-{% endif %}
+{% assign productNames = "" | split:'/' %}
+{% for product in site.products %}
 
+	{% assign productName = product.path | split:'/' | last | split: '.' | first %}
+
+	{% if include.category == blank %}
+		{% assign productNames = productNames | push:productName %}
+	{% else %}
+
+		{% assign productCategory = product.category | split:'/' | last %}
+		{% if include.category == productCategory %}
+			{% assign productNames = productNames | push:productName %}
+		{% endif %}
+
+	{% endif %}
 
 {% endfor %}
+{% assign productNames = productNames | uniq %}
+
+<ul class="product-list">
+{% for currentName in productNames %}
+	{% assign mainProduct = null %}
+	{% assign currentProduct = null %}
+
+	{% for product in site.products %}
+
+		{% assign productName = product.path | split:'/' | last | split: '.' | first %}
+		{% if currentName == productName %}
+			{% if product.lang == site.t.default_lang %}
+				{% assign mainProduct = product %}
+			{% endif %}
+
+			{% if product.lang == page.lang %}
+				{% assign currentProduct = product %}
+			{% endif %}
+
+			{% if currentProduct == null %}
+				{% assign currentProduct = product %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+
+	{% if mainProduct == null %}
+		{% assign mainProduct = currentProduct %}
+	{% endif %}
+
+	{% include product.html main=mainProduct current=currentProduct lvl=include.lvl %}
+{% endfor %}
+</ul>
