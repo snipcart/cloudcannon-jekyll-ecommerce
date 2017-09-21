@@ -1,5 +1,5 @@
 ---
-title: Friend & Greasy
+title: Fried & Greasy
 color: '#ffbbbb'
 ---
 
