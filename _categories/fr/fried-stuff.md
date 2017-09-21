@@ -5,4 +5,4 @@ color: '#ffbbbb'
 ---
 
 
-Tout ce que votre estomac a besoin pour etre heureuse!
+Un ventre bien heureux (temporairement)!
