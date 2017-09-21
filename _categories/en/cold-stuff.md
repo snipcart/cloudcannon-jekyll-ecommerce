@@ -1,5 +1,7 @@
 ---
-title: Cold and sweet
+title: Cold & Sweet
 color: '#6b6bff'
 ---
-You can have all the ice cream in the world.
+
+
+Some say ice cream makes problems disappear.
