@@ -1,7 +1,7 @@
 ---
-name: Ice Cream
-price_number:
-id:
-product_image_path:
-category:
+name: Crème glacée
+price_number: 5
+id: '1'
+product_image_path: /uploads/ice-cream-1.jpg
+category: en/cold-stuff
 ---
