@@ -32,9 +32,11 @@ t:
   en:
     title: Roger's Potato Shack
     buyBtn: Buy it for
+    decimal_sep: '.'
   fr:
     title: La Cantine à Roger
     buyBtn: Acheter pour
+    decimal_sep: ','
 
 # -----
 # Build

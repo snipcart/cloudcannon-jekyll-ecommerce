@@ -11,8 +11,15 @@
 	<div class="product-details">
 		<h{{include.lvl}} class="product-title">{{product.title}}</h{{include.lvl}}>
 		<p class="button">
-			<button>
-				{{site.t[page.lang].buyBtn}} {{data.price}}$
+			{% assign price = data.price | times:100 | split:'.' | first %}
+			<button class="snipcart-add-item"
+					data-item-name="{{ product.name }}"
+					data-item-id="{{ product.id }}"
+					data-item-image="{{ product.product_image_path }}"
+					data-item-description="{{ product.description }}"
+					data-item-url="{{ data.url }}"
+					data-item-price="{{ data.price }}">
+				{{site.t[page.lang].buyBtn}} {{ data.price | floor }}{{site.t[page.lang].decimal_sep}}{{price | slice:-2,2}}$
 			</button>
 		</p>
 		<p>{{product.description}}</p>
