@@ -9,7 +9,7 @@
 		{% endif %}
 
 		{% if link.layout != 'home' %}
-			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.title }}</a>
+			<a href="{{link.url}}" class="{{ class }}">{{ link.title }}</a>
 		{% endif %}
 	{% endfor %}
 	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn" title="Edit navigation"><strong>&#9998;</strong></a>

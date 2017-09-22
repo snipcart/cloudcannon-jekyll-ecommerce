@@ -1,14 +1,10 @@
 - title: Social
   links:
-    - name: Fur
-      link: 'https://www.facebook.com/'
+    - name: Snipcart
+      link: 'https://www.facebook.com/Snipcart/'
       new_window: true
       social_icon: Facebook
-    - name: Fur
-      link: 'https://www.instagram.com/'
-      new_window: true
-      social_icon: Instagram
-    - name: "@Fur"
-      link: 'https://www.twitter.com'
+    - name: "@Snipcart"
+      link: 'https://twitter.com/snipcart'
       new_window: true
       social_icon: Twitter
