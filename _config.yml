@@ -4,6 +4,7 @@
 title: Roger's Potato Shack
 url: "http://turquoise-rook.cloudvent.net/"
 baseurl: /demo-cloudcannon
+demo_domain: https://snipcart.github.io
 google_analytics_key:
 google_maps_javascript_api_key:
 snipcart_key: "MzMxN2Y0ODMtOWNhMy00YzUzLWFiNTYtZjMwZTRkZDcxYzM4"

@@ -17,7 +17,7 @@
 					data-item-id="{{ data.id }}"
 					data-item-image="{{ site.baseurl }}{{ product.product_image_path }}"
 					data-item-description="{{ product.description }}"
-					data-item-url="{{ site.baseurl }}{{ page.url }}"
+					data-item-url="{{ site.demo_domain }}{{ site.baseurl }}{{ page.url }}"
 					data-item-price="{{ data.price_number }}">
 				{{site.t[page.lang].buyBtn}} {{ data.price_number | floor }}{{site.t[page.lang].decimal_sep}}{{price | slice:-2,2}}$
 			</button>
