@@ -9,9 +9,8 @@
 		{% endif %}
 
 		{% if link.layout != 'home' %}
-			<a href="{{link.url}}" class="{{ class }}">{{ link.title }}</a>
+			<a href="{{ site.baseurl }}{{link.url}}" class="{{ class }}">{{ link.title }}</a>
 		{% endif %}
 	{% endfor %}
-	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn" title="Edit navigation"><strong>&#9998;</strong></a>
-	<a href="#" class="cart snipcart-checkout"><i class="material-icons">shopping_cart</i><span>View Cart</span></a>
+	<a href="#" class="cart snipcart-checkout"><i class="material-icons">shopping_cart</i><span>{{site.t[page.lang].view_cart}}</span></a>
 </nav>

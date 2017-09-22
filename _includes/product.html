@@ -3,9 +3,9 @@
 	{% assign product = include.current %}
 	<div class="styles">
 		{% if product.product_image_path != blank %}
-		<img src="{{product.product_image_path}}" alt="{{product.title}}" />
+		<img src="{{ site.baseurl }}{{product.product_image_path}}" alt="{{product.title}}" />
 		{% elsif data.product_image_path != blank %}
-		<img src="{{data.product_image_path}}" alt="{{product.title}}" />
+		<img src="{{ site.baseurl }}{{data.product_image_path}}" alt="{{product.title}}" />
 		{% endif %}
 	</div>
 	<div class="product-details">
@@ -13,11 +13,11 @@
 		<p class="button">
 			{% assign price = data.price_number | times:100 | split:'.' | first %}
 			<button class="snipcart-add-item"
-					data-item-name="{{ product.name }}"
-					data-item-id="{{ product.id }}"
-					data-item-image="{{ product.product_image_path }}"
+					data-item-name="{{ product.title }}"
+					data-item-id="{{ data.id }}"
+					data-item-image="{{ site.baseurl }}{{ product.product_image_path }}"
 					data-item-description="{{ product.description }}"
-					data-item-url="{{ data.url }}"
+					data-item-url="{{ site.baseurl }}{{ page.url }}"
 					data-item-price="{{ data.price_number }}">
 				{{site.t[page.lang].buyBtn}} {{ data.price_number | floor }}{{site.t[page.lang].decimal_sep}}{{price | slice:-2,2}}$
 			</button>

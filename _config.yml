@@ -35,12 +35,14 @@ t:
     decimal_sep: '.'
     change_lang: Switch Language
     pages_label: Pages
+    view_cart: View Cart
   fr:
     title: La Cantine à Roger
     buyBtn: Acheter pour
     decimal_sep: ','
     change_lang: Changer de langue
     pages_label: Pages
+    view_cart: Voir le panier
 
 # -----
 # Build

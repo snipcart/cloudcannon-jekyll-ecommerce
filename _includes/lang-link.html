@@ -4,5 +4,5 @@
 	{% capture otherPath %}_{{page.collection}}/{{lang}}/{{pageName}}{% endcapture %}
 	{% assign otherPage = site[page.collection] | where:'path', otherPath | first %}
 	{% assign langUrl = otherPage.url %}
-	<a href="{{langUrl}}">{{lang}}</a>
+	<a href="{{ site.baseurl }}{{langUrl}}">{{lang}}</a>
 </li>
