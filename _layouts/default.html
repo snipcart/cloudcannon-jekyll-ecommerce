@@ -46,8 +46,14 @@
 		{{ content }}
 		<footer>
 			<div class="container">
-				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
 				<div class="footer-columns">
+					<ul class="footer-links">
+						<li><h4>{{site.t[page.lang].pages_label}}</h4></li>
+					{% assign links = site.pages | where:'lang', page.lang | order:'layout' %}
+					{% for link in links  %}
+						<li><a href="{{link.url}}">{{link.title}}</a></li>
+					{% endfor %}
+					</ul>
 					{% for column in site.data.footer %}
 					<ul class="footer-links">
 						<li><h4>{{ column.title }}</h4></li>
@@ -63,7 +69,7 @@
 					{% endfor %}
 
 					<ul class="footer-links">
-						<li><h4>Langs</h4></li>
+						<li><h4>{{site.t[page.lang].change_lang}}</h4></li>
 					{% for lang in site.langs %}
 						{% if lang == page.lang %}
 						<li class="active">{{lang}}</li>

@@ -1,17 +1,3 @@
-- title: General
-  links:
-    - name: Products
-      link: /
-    - name: Our Story
-      link: /about/
-    - name: Contact
-      link: /contact/
-- title: Help
-  links:
-    - name: Shipping
-      link: /shipping/
-    - name: Returns
-      link: /returns/
 - title: Social
   links:
     - name: Fur

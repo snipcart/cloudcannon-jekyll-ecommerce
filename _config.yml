@@ -33,10 +33,14 @@ t:
     title: Roger's Potato Shack
     buyBtn: Buy it for
     decimal_sep: '.'
+    change_lang: Switch Language
+    pages_label: Pages
   fr:
     title: La Cantine à Roger
     buyBtn: Acheter pour
     decimal_sep: ','
+    change_lang: Changer de langue
+    pages_label: Pages
 
 # -----
 # Build
