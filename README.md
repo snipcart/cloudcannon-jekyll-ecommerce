@@ -10,7 +10,7 @@ You can learn more about building stuff on CloudCannon at [CloudCannon Academy](
 
 > Read full tutorial [here](https://snipcart.com/blog/cms-jekyll-cloud-cannon-multilingual)
 
-> See live demo [here](https://snipcart.github.io/demo-cloudcannon/)
+> See live demo [here](https://turquoise-rook.cloudvent.net/)
 
 Enjoy folks!
 
