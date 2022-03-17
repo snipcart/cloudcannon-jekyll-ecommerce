@@ -1,7 +1,5 @@
 ## Multilingual E-commerce Jekyll template
 
-![snipcart-static-site-ecommerce-jekyll](https://snipcart.com/media/204103/cloudcannon.png)
-
 E-commerce template for Jekyll. Browse through a [live demo](https://turquoise-rook.cloudvent.net).
 
 This template is based on [Fur](https://github.com/CloudCannon/fur-jekyll-template) by [CloudCannon](http://cloudcannon.com/) and we added multilingual features and customizable categories.
